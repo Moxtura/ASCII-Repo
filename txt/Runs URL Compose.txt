@@ -1,0 +1,4 @@
+https://make.powerautomate.com/
+environments/body('Parse_workflow_JSON')?['tags']?['environmentName']/
+flows/body('Parse_workflow_JSON')?['tags']?['logicAppName']/
+runs/body('Parse_workflow_JSON')?['run']?['name']

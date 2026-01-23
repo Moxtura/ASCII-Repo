@@ -1,0 +1,110 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "Image",
+            "url": "https://github.com/Moxtura/ASCII-Repo/blob/main/src/power_automate_error.png?raw=true",
+            "size": "Large",
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Failed Workflow Run",
+            "horizontalAlignment": "Center",
+            "style": "heading",
+            "weight": "Bolder",
+            "color": "Accent",
+            "size": "ExtraLarge",
+            "spacing": "None"
+        },
+        {
+            "type": "TextBlock",
+            "text": "An error occured on {Flow Name}",
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.ToggleVisibility",
+                    "title": "Details",
+                    "targetElements": [
+                        "toggleDetails"
+                    ]
+                },
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "View",
+                    "url": "URL"
+                }
+            ],
+            "spacing": "ExtraLarge",
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "Container",
+            "isVisible": false,
+            "id": "toggleDetails",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "110px",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Project Number:",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "P25000-AAA",
+                                    "wrap": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "110px",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Error Message:",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Lorem Ipsum Dolor Beuoa Shve Sozuga Syge",
+                                    "wrap": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "style": "emphasis",
+            "spacing": "Medium"
+        }
+    ]
+}

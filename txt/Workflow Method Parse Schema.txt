@@ -1,0 +1,63 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+        "tags": {
+            "type": "object",
+            "properties": {
+                "flowDisplayName": {
+                    "type": "string"
+                },
+                "environmentName": {
+                    "type": "string"
+                },
+                "logicAppName": {
+                    "type": "string"
+                },
+                "environmentFlowSuspensionReason": {
+                    "type": "string"
+                },
+                "state": {
+                    "type": "string"
+                },
+                "createdTime": {
+                    "type": "string"
+                },
+                "lastModifiedTime": {
+                    "type": "string"
+                },
+                "createdBy": {
+                    "type": "string"
+                },
+                "triggerType": {
+                    "type": "string"
+                }
+            }
+        },
+        "run": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

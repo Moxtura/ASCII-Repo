@@ -1,0 +1,9 @@
+Apply to Each:
+    first(first(body('Filter_array_of_workflow'))?['outputs'])?['error']?['message']
+
+Scope:
+    first(body('Filter_array_of_workflow'))?['error']?['message']
+
+Condition:
+    first(body('Filter_array_of_workflow'))?['error']?['message']
+
