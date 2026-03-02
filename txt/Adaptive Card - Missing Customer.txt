@@ -1,0 +1,159 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "100px",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://github.com/Moxtura/ASCII-Repo/blob/main/src/missing_person.png?raw=true"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Customer Not Found!",
+                                    "wrap": true,
+                                    "size": "ExtraLarge",
+                                    "weight": "Bolder",
+                                    "color": "Accent",
+                                    "style": "heading",
+                                    "spacing": "None",
+                                    "horizontalAlignment": "Center"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "for <Project Number>",
+                                    "horizontalAlignment": "Center",
+                                    "wrap": true,
+                                    "spacing": "None"
+                                }
+                            ],
+                            "horizontalAlignment": "Center",
+                            "verticalContentAlignment": "Center"
+                        }
+                    ]
+                }
+            ],
+            "style": "emphasis"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Create new customer information before creating new project. The created project will now be deleted but you can view its details below.",
+            "wrap": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.ToggleVisibility",
+                    "title": "Details",
+                    "targetElements": [
+                        "ctr_details"
+                    ]
+                },
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "New Customer",
+                    "url": "https://teams.microsoft.com/l/entity/26bc2873-6023-480c-a11b-76b66605ce8c/_djb2_msteams_prefix_3624415407?context=%7B%22channelId%22%3A%2219%3AeFe-lLSS0atzG9SPis-ZzVgmrpHCPeRncDD6auPPNc01%40thread.tacv2%22%7D&tenantId=e6ed5361-3b71-4ecb-b498-8bf9bd11e009"
+                },
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "Project List",
+                    "url": "https://teams.microsoft.com/l/entity/26bc2873-6023-480c-a11b-76b66605ce8c/_djb2_msteams_prefix_3228625638?context=%7B%22channelId%22%3A%2219%3A34c124b4b2474d678309c99ed4ae2c0a%40thread.tacv2%22%7D&tenantId=e6ed5361-3b71-4ecb-b498-8bf9bd11e009"
+                }
+            ],
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "FactSet",
+                    "facts": [
+                        {
+                            "title": "Title",
+                            "value": "<Sample Title>"
+                        },
+                        {
+                            "title": "Project Number",
+                            "value": "<Sample Project Number>"
+                        },
+                        {
+                            "title": "Project Manager",
+                            "value": "<Sample Project Manager>"
+                        },
+                        {
+                            "title": "PO Number",
+                            "value": "<Sample PO Number>"
+                        },
+                        {
+                            "title": "Start Date",
+                            "value": "<Sample Start Date>"
+                        },
+                        {
+                            "title": "Target Date",
+                            "value": "<Sample Target Date>"
+                        },
+                        {
+                            "title": "Status",
+                            "value": "<Sample Status>"
+                        },
+                        {
+                            "title": "Model",
+                            "value": "<Sample Model>"
+                        },
+                        {
+                            "title": "Serial",
+                            "value": "<Sample Serial>"
+                        },
+                        {
+                            "title": "Remarks",
+                            "value": "<Sample Remarks>"
+                        },
+                        {
+                            "title": "Customer Name",
+                            "value": "<Sample Customer Name>"
+                        },
+                        {
+                            "title": "Address",
+                            "value": "<Sample Address>"
+                        },
+                        {
+                            "title": "End-User",
+                            "value": "<Sample End-User>"
+                        },
+                        {
+                            "title": "Position",
+                            "value": "<Sample Position>"
+                        },
+                        {
+                            "title": "Contact Number",
+                            "value": "<Sample Contact Number>"
+                        },
+                        {
+                            "title": "Email",
+                            "value": "<Sample Email>"
+                        }
+                    ],
+                    "spacing": "None"
+                }
+            ],
+            "id": "ctr_details",
+            "isVisible": false
+        }
+    ]
+}
